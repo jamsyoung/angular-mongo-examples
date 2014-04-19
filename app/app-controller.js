@@ -1,6 +1,5 @@
 /* globals angular */
 /* exported myApp, UserListController */
-
 'use strict';
 
 var myApp = angular.module('myApp', []);

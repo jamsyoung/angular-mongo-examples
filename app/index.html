@@ -10,6 +10,9 @@
 Search: <input ng-model="user"/>
 <div>
     <ul class="users">
+        <!-- the </li> is intentionally left off.        -->
+        <!-- I will write a blog post about it one day.  -->
+        <!-- Not that it matters at all in this example. -->
         <li ng-repeat="user in users | filter: user">{{ user.name }}
     </ul>
 </div>
@@ -18,12 +21,12 @@ Search: <input ng-model="user"/>
     <fieldset>
         <legend>New User</legend>
         <div>
-            <input type="text" placeholder="User..." ng-model="username" size="50" required/>
-            <input type="text" placeholder="Password..." ng-model="password" size="50" required/>
-            <input type="text" placeholder="Email..." ng-model="email" size="50" required/>
+            <input type="text" placeholder="Enter a pointless username" ng-model="username" size="50" required/>
+            <input type="text" placeholder="Enter an insecure password" ng-model="password" size="50" required/>
+            <input type="text" placeholder="Enter a bogus email address" ng-model="email" size="50" required/>
         </div>
     </fieldset>
-    <button type="submit">Save now...</button>
+    <button type="submit">Add User</button>
 </form>
 
 <script src="scripts/angular/angular.min.js"></script>
