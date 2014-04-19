@@ -7,10 +7,10 @@ This post is not meant to replace that post.  It is only intended to complement
 it by showing updated code examples.
 
 The examples have been updated to use [Express 4.x][express], pass
-[JSHint][jshint] (via [grunt][grunt]), include [JSDoc][jsdoc] comments, and work
-as a [npm package][npm-package].  This repository also includes a configuration
-file for [EditorConfig][editorconfig].  You should check it out if you are not
-familiar with it.
+[JSHint][jshint] (via [grunt][grunt]), include [JSDoc][jsdoc] comments, install
+angular via [Bower][bower] and work as a [npm package][npm-package].  This
+repository also includes a configuration file for [EditorConfig][editorconfig].
+You should check it out if you are not familiar with it.
 
 This uses a [MongoLab][mongolab] database.  If this post leads to that database
 getting used for things other than this exmaple, it will be deleted without
@@ -93,6 +93,7 @@ AngularJS application directory should be structured.
 [angularjs-google-style]: https://google-styleguide.googlecode.com/svn/trunk/angularjs-google-style.html
 [best-practices-angular-structure]: https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub
 [blog-post]: http://www.phloxblog.in/single-page-application-angular-js-node-js-mongodb-mongojs-module
+[bower]: http://bower.io
 [editorconfig]: http://editorconfig.org
 [express]: http://expressjs.com/4x/api.html
 [grunt]: http://gruntjs.com
