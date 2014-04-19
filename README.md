@@ -44,6 +44,7 @@ AngularJS application directory should be structured.
 
 ```
 |-- angular-mongo/                 <---- Root directory
+|   |-- .bowerrc                   <---- Configuration file for Bower
 |   |-- .editorconfig              <---- Configuration file for EditorConfig
 |   |
 |   |-- .git/                      <---- Configuration directory for Git
@@ -59,10 +60,15 @@ AngularJS application directory should be structured.
 |   |   |-- app-controller.js      <---- Controller
 |   |   |-- index.html             <---- HTML View
 |   |
+|   |-- bower.json                 <---- COnfiguration file for Bower
 |   |-- node_modules/              <---- `npm install` dependencies directory
 |   |   |-- ...
 |   |
 |   |-- package.json               <---- Configuration file for npm
+|   |
+|   |-- public/                    <---- Static files generated from `bower install`
+|   |   |-- ...
+|   |
 |   |-- server.js                  <---- THe ExpressJS server
 |   |-- set-env.conf               <---- Configuration file for the runtime environment
 ```         
