@@ -62,7 +62,7 @@ AngularJS application directory should be structured.
 |   |   |-- app-controller.js      <---- Controller
 |   |   |-- index.html             <---- HTML View
 |   |
-|   |-- bower.json                 <---- COnfiguration file for Bower
+|   |-- bower.json                 <---- Configuration file for Bower
 |   |-- node_modules/              <---- `npm install` dependencies directory
 |   |   |-- ...
 |   |
