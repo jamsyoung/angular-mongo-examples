@@ -27,8 +27,8 @@ app.get('/', function (request, response) {
 
 
 app.get('/app/:file', function (request, response) {
-    response.sendfile('app/' + request.params['file']);
-})
+    response.sendfile('app/' + request.params.file);
+});
 
 
 /* api routes */
