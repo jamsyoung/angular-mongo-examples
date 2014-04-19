@@ -6,7 +6,8 @@ module.exports = function (grunt) {
     grunt.initConfig({
         jshint: {
             files: [
-                '*.js'
+                '*.js',
+                'app/**/*.js'
             ],
             options: {
                 jshintrc: path.normalize('.jshintrc')
