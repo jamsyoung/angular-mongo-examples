@@ -1,0 +1,40 @@
+{
+    "name": "angular-mongo-examples",
+    "version": "0.1.0",
+    "private": true,
+    "description": "angular-mongo-examples",
+    "author": {
+        "name": "James Young",
+        "email": "jmeyoung@gmail.com",
+        "url": "http://jamsyoung.com"
+    },
+    "scripts": {
+        "postinstall": "node_modules/.bin/bower install",
+        "start": "source set-env.conf; node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "engines": {
+        "node": "0.10.26"
+    },
+    "dependencies": {
+        "body-parser": "1.0.2",
+        "debug": "0.8.0",
+        "express": "4.0.0",
+        "morgan": "1.0.0",
+        "mongojs": "0.12.1",
+        "mongoose": "3.8.8"
+    },
+    "devDependencies": {
+        "bower": "1.3.2",
+        "chai": "1.9.1",
+        "grunt": "0.4.4",
+        "grunt-contrib-jshint": "0.10.0",
+        "mocha": "1.18.2"
+    },
+    "config": {
+        "port": 8080
+    }
+}

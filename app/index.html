@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+<meta charset="utf-8">
+<title>Angular Mongo Example</title>
+</head>
+
+<body ng-controller="UserListController">
+Search: <input ng-model="user"/>
+<div>
+    <ul class="users">
+        <li ng-repeat="user in users | filter: user">{{ user.name }}
+    </ul>
+</div>
+
+<form name="myform" id="myform1" ng-submit="save()">
+    <fieldset>
+        <legend>New User</legend>
+        <div>
+            <input type="text" placeholder="User..." ng-model="username" size="50" required/>
+            <input type="text" placeholder="Password..." ng-model="password" size="50" required/>
+            <input type="text" placeholder="Email..." ng-model="email" size="50" required/>
+        </div>
+    </fieldset>
+    <button type="submit">Save now...</button>
+</form>
+
+<script src="scripts/angular/angular.min.js"></script>
+<script src="app/app-controller.js"></script>
+</body>
+
+</html>
