@@ -7,10 +7,10 @@ This post is not meant to replace that post.  It is only intended to complement
 it by showing updated code examples.
 
 The examples have been updated to use [Express 4.x][express], pass
-[JSHint][jshint] (via [grunt][grunt]), include [JSDoc][jsdoc] comments, install
-angular via [Bower][bower] and work as a [npm package][npm-package].  This
-repository also includes a configuration file for [EditorConfig][editorconfig].
-You should check it out if you are not familiar with it.
+[JSHint][jshint] (via [grunt][grunt]), install angular via [Bower][bower] and
+work as a [npm package][npm-package].  This repository also includes a
+configuration file for [EditorConfig][editorconfig].  You should check it out if
+you are not familiar with it.
 
 This uses a [MongoLab][mongolab] database.  If this post leads to that database
 getting used for things other than this exmaple, it will be deleted without
