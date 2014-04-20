@@ -17,17 +17,13 @@ app = express();
 /* middleware */
 app.use(logger());
 app.use(bodyParser());
+app.use('/app', express['static'](__dirname + '/app'));
 app.use(express['static'](__dirname + '/public'));
 
 
 /* application routes */
-app.get('/', function (request, response) {
+app.get(/^\/(index.html)?$/i, function (request, response) {
     response.sendfile('app/index.html');
-});
-
-
-app.get('/app/:file', function (request, response) {
-    response.sendfile('app/' + request.params.file);
 });
 
 
