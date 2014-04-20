@@ -13,7 +13,7 @@ includes a configuration file for [EditorConfig][editorconfig].  You should
 check it out if you are not familiar with it.
 
 This uses a [MongoLab][mongolab] database.  If this post leads to that database
-getting used for things other than this exmaple, it will be deleted without
+getting used for things other than this example, it will be deleted without
 notice.
 
 
@@ -28,7 +28,7 @@ To see the application in action go to <http://localhost:8080/> in your browser.
 To see the API in action go to <http://localhost:8080/api/user> in your browser
 or go the following with `curl`.
 
-```base
+```bash
 $ curl http://localhost:8080/api/user
 ```
 
@@ -71,7 +71,7 @@ AngularJS application directory should be structured.
 |   |-- public/                    <---- Static files generated from `bower install`
 |   |   |-- ...
 |   |
-|   |-- server.js                  <---- THe ExpressJS server
+|   |-- server.js                  <---- The ExpressJS server
 |   |-- set-env.conf               <---- Configuration file for the runtime environment
 ```         
 
@@ -85,7 +85,7 @@ AngularJS application directory should be structured.
 
 - [An AngularJS Style Guide for Closure Users at Google][angularjs-google-style]
 
-- [Best Practice Recommendations for Angular App Structore][best-practices-angular-structure]
+- [Best Practice Recommendations for Angular App Structure][best-practices-angular-structure]
 
 - [Proposals to Make Components More Reusable #109][yeoman-generator-angular-issues-109]
 
