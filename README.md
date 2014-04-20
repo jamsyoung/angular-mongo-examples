@@ -26,7 +26,7 @@ $ npm start
 To see the application in action go to <http://localhost:8080/> in your browser.
 
 To see the API in action go to <http://localhost:8080/api/user> in your browser
-or go the following with `curl`.
+or do the following with `curl`.
 
 ```bash
 $ curl http://localhost:8080/api/user
