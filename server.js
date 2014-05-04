@@ -2,13 +2,15 @@
 'use strict';
 
 
-var db = require('mongojs').connect('mongodb://test-user:test@ds053858.mongolab.com:53858/test-database', [ 'test-collection' ]),
+var
     app,
-    port = process.env.PORT || process.env.npm_package_config_port,
+    bodyParser = require('body-parser'),
+    db = require('mongojs').connect('mongodb://test-user:test@ds053858.mongolab.com:53858/test-database', [ 'test-collection' ]),
     debug = require('debug')('angular-mongo'),
-    logger = require('morgan'),
     express = require('express'),
-    bodyParser = require('body-parser');
+    logger = require('morgan'),
+    path = require('path'),
+    port = process.env.PORT || process.env.npm_package_config_port;
 
 
 app = express();
@@ -17,8 +19,8 @@ app = express();
 /* middleware */
 app.use(logger());
 app.use(bodyParser());
-app.use('/app', express['static'](__dirname + '/app'));
-app.use(express['static'](__dirname + '/public'));
+app.use('/app', express['static'](path.join(__dirname, '/app')));
+app.use(express['static'](path.join(__dirname, '/public')));
 
 
 /* application routes */
